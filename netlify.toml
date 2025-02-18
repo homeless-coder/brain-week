@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build" # O yarn build, según tu gestor de paquetes
+  publish = "dist"
+
+[dev]
+  command = "npm run dev"
+  targetPort = 5173
