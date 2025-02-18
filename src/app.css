@@ -1,5 +1,0 @@
-@import url("https://fonts.googleapis.com/css2?family=Monomakh&display=swap");
-@import "tailwindcss";
-@theme {
-  --font-monomakh: "Monomakh", sans-serif; 
-}
