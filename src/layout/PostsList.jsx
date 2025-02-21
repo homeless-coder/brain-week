@@ -159,8 +159,8 @@ const getPosts = () => matchSorter(posts, searchValue, {keys: ['title']})
                     </div>
                 ) : (
                     <div className='flex flex-col text-center justify-center my-20'>
-                        <p style={{ textShadow: '0 2.1px 3.1px rgba(0, 0, 0, 0.30)' }} className="shadow-none font-monomakh tracking-widest mb-1.5 text-8xl lg:text-4xl font-black tracking-tight leading-none text-gray-800">{`(｡•́︿•̀｡)`}</p>
-                        <p style={{ textShadow: '0 2.1px 3.1px rgba(0, 0, 0, 0.30)' }} className="shadow-none font-monomakh tracking-widest mb-1.5 text-2xl lg:text-4xl font-black tracking-tight leading-none text-gray-800 mt-10">Lo que sea que hayas escrito, solo existe en tu imaginación...</p>
+                        <p style={{ textShadow: '0 2.1px 3.1px rgba(0, 0, 0, 0.30)' }} className="shadow-none font-monomakh tracking-widest mb-1.5 text-5xl lg:text-6xl font-black tracking-tight leading-none text-gray-800">{`(｡•́︿•̀｡)`}</p>
+                        <p style={{ textShadow: '0 2.1px 3.1px rgba(0, 0, 0, 0.30)' }} className="shadow-none font-monomakh tracking-widest mb-1.5 text-2xl lg:text-3xl font-black tracking-tight leading-none text-gray-800 mt-10">Lo que sea que hayas escrito, solo existe en tu imaginación...</p>
                     </div>
                 )
             )}
