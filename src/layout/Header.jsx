@@ -7,7 +7,7 @@ const Header = ({ searchValue, onHandleChange }) => {
                     <p className="font-bold ml-3.5">Semana del Cerebro UNAH</p>
                 </a>
                 <form id="search" className="order-last sm:order-none flex flex-grow items-center justify-end">
-                    <input type="text" id="header-searchbox" name="q" placeholder="Buscar eventos..." className="w-full lg:max-w-[400px] bg-custom-white border border-transparent float-right focus:bg-white focus:border-slate-300 focus:outline-none h-8 p-4 placeholder-slate-500 rounded text-slate-700 text-sm" value={searchValue} onChange={onHandleChange} />
+                    <input type="text" id="header-searchbox" name="q" placeholder="Buscar eventos..." className="w-full lg:max-w-[400px] bg-custom-white border border-transparent float-right focus:bg-white focus:border-slate-300 focus:outline-none h-8 p-4 placeholder-slate-500 rounded text-slate-700 text-sm" value={searchValue} onChange={({ target: { value } }) => onHandleChange(value)} />
                 </form>
             </div>
         </header>

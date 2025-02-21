@@ -5,13 +5,13 @@ import PostsList from './layout/PostsList'
 import Footer from './layout/Footer'
 
 function App() {
-
+  const [searchValue, setSearchValue] = useState("")
   return (
     <>
-      <Header />
+      <Header searchValue={searchValue} onHandleChange={setSearchValue} />
       <main className='flex w-full px-6 flex-col mt-19 sm:mt-8 max-w-2xl lg:max-w-5xl'>
         <Hero />
-        <PostsList />
+        <PostsList searchValue={searchValue} />
       </main>
       <Footer />
     </>
