@@ -6,7 +6,7 @@ const slides = [
   'Dice mi papi que el pensamiento crítico y tener criterio propio también refuerzan el cerebro',
   'NO a la privatización de la UNAH',
   'Dice mi papi que la conciencia de clase va antes que los intereses propios',
-  'Dictadura = Nula capacidad de liderazgo'
+  'Dictadura = Nula capacidad de coordinación'
 ]
 
 const Hero = ({ searchValue, onHandleChange }) => {
