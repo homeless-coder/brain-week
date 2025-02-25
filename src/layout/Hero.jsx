@@ -12,6 +12,7 @@ const slides = [
 const Hero = ({ searchValue, onHandleChange }) => {
   const [counter, setCounter] = useState(0)
   const [slide, setSlide] = useState(0)
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   const onHandleSlides = () => {
     setCounter(counter + 1)
@@ -35,7 +36,11 @@ const Hero = ({ searchValue, onHandleChange }) => {
                   className="cursor-pointer ease-in-out duration-200 max-h-[10rem] sm:max-h-[14rem] lg:max-h-[14.95rem] hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.15)]" 
                   src="/cerebrito.png" 
                   alt="Cerebrito basado"
-                  onClick={onHandleSlides}
+                  {...(
+                    isMobile ? {onTouchStart: onHandleSlides}
+                    : {onClick: onHandleSlides}
+                  )}
+                  onTouchStart={onHandleSlides}
                   />
                   {
                     (counter > 3 && counter <= 9) && (
